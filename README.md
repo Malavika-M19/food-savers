@@ -11,6 +11,6 @@ Test automation repository for web application.
 7. Run tests using command: pytest
 
 ### Sample .env file
-BASE_URL=https://foodsavers.app/
-FS_USERNAME=abcd@gmail.com
-FS_PASSWORD=Abcd@123
+BASE_URL=https://foodsavers.app/  
+FS_USERNAME=abcd@gmail.com  
+FS_PASSWORD=Abcd@123  
