@@ -10,6 +10,9 @@ class LoginPage(BasePage):
             raise ValueError("USERNAME and PASSWORD must be provided either as arguments or in the environment")
 
         self.page.get_by_role("link", name="Sign In").click()
+        self.submit_credentials(username, password)
+
+    def submit_credentials(self, username, password):
         self.page.get_by_placeholder("Email").fill(username)
         self.page.get_by_placeholder("Password").fill(password)
         self.page.get_by_role("button", name="Login").click()
